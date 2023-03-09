@@ -14,5 +14,19 @@
 	"CHECK_FILE_POINTOER_ERROR":{
 		"prefix": "CHECK_FILE_POINTOER_ERROR",
 		"body": ["#define CHECK_FP_ERROR(fp)\\","if(fp == NULL){\\","\treturn -1;\\","}"]
-	}
+	}    
+	,"MyMain": {
+        "prefix": "main",
+        "body": [
+            "#include <stdio.h>",
+            "",
+            "int main(int argc, char const *argv[]){",
+            "    ",
+            "    return 0;",
+            "}",
+            "",
+        ],
+        "description": ""
+    },
+
 }
