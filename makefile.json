@@ -1,0 +1,17 @@
+{
+    "template": {
+        "prefix": "temp",
+        "body": [
+            "CC=gcc",
+            "TARGET=$1",
+            "OBJS=$2",
+            "",
+            "\\$(TARGET): \\$(OBJS)",
+            "\t\\$(CC) \\$(OBJS) -o \\$@",
+            "",
+            "%o : %c",
+            "\t\\$(CC) -c $< -o $@",
+        ],
+        "description": ""
+    },
+}
